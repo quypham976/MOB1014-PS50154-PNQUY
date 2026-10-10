@@ -40,18 +40,18 @@ public class XuLyMang {
         if(!timThay){
             System.out.printf("Khong Tim Thay");
         }
-        //Tự viết thuật toán Bubble Sort để sắp xếp mảng giảm dần, xuất kết quả bằng Arrays.toString()
+        //Tự viết thuật toán Bubble Sort để sắp xếp mảng giảm dần,
        for( int i = 0; i < a.length; i++){
            for ( int j = 0; j < a.length -i - 1; j++){
                if(a[j] < a[j+1]){ // giảm dần nên số lớn ddc đưa về phải
                    int temp = a[j]; //temp là giữ tạm số 
-                   a[j] = a[j+1];
-                   a[j+1] = temp;
+                   a[j] = a[j+1];//→ đổi phần bên trái
+                   a[j+1] = temp;//→ đưa số cũ vào bên phải
                    
                }
            }      
        }
-       
+        //xuất kết quả bằng Arrays.toString()
        System.out.println("Mang giam dan (Bubble Sort): " + Arrays.toString(a));
         int[] b = Arrays.copyOf(a, a.length);       
         Arrays.sort(b);

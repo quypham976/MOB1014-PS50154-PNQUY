@@ -20,7 +20,7 @@ public class Bai2 {
     
     if (toan<0 || toan>10 || Ly<0 || Ly>10 || Hoa<0 || Hoa>10){
          System.out.printf("Diem khong hop le");
-         return;  //kết thúc chương trình      
+         return;  //trả về kết quả của hàm      
     }
         double DiemTB = ( toan*2 + Ly + Hoa)/4 ;
         String XepLoai;
